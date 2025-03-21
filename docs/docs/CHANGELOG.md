@@ -1,5 +1,122 @@
 # ChangeLog
 
+## [2025-03-18]
+
+### `llama-index-core` [0.12.25]
+
+- Ensuring original text is preserved in CHUNKING_REGEX in splitters (#18054)
+- use SimpleDirectoryReader without llama-index-readers-file package (#18173)
+- Improved Annotations and Error Handling in utils.py and exec_utils.py (#18153)
+- Add `build_semantic_nodes_from_nodes` to SemanticDoubleMergingSplitterNodeParser (#18114)
+- fix: Optimize memory management of the Context object (#18170)
+- fix: allow streaming events from context after workflows ends (#18174)
+- feat: Add a clear method to the Context class (#18136)
+
+### `llama-index-embeddins-clip` [0.4.0]
+
+- unpin ClipEmbedding deps (#18165)
+
+### `llama-index-embeddings-netmind` [0.1.0]
+
+- add netmind integrations (#18078)
+
+### `llama-index-indices-managed-llama-cloud` [0.6.9]
+
+- fix kwargs for LlamaCloudCompositeRetriever (#18141)
+
+### `llama-index-llms-bedrock-converse` [0.4.10]
+
+- Bug fix: Calling tools with no arguments (#18143)
+- add token counts to the chat and achat methods of BedrockConverse (#18148)
+
+### `llama-index-llms-contextual` [0.0.1]
+
+- fixes for contextual glm (#18145)
+
+### `llama-index-llms-google-genai` [0.1.4]
+
+- genai image output (#18138)
+
+### `llama-index-llms-langchain` [0.6.1]
+
+- Replace deprecated predict with invoke in llama-index-llms-langchain (#18169)
+
+### `llama-index-llms-netmind` [0.1.0]
+
+- add netmind integrations (#18078)
+
+### `llama-index-llms-novita` [0.1.0]
+
+- add NovitaAI llm class (#18134)
+
+### `llama-index-postprocessor-aimon-rerank` [0.1.0]
+
+- AIMon reranker integration into LlamaIndex node postprocessors (#18087)
+
+### `llama-index-readers-mongodb` [0.3.1]
+
+- feat(mongo reader): field_extractors (#18063)
+
+### `llama-index-tools-vectara-query` [0.3.1]
+
+- Update Vectara Tool for Metadata Changes to VectaraIndex (#18126)
+
+### `llama-index-vector-stores-azurecosmosnosql` [1.3.2]
+
+- Fix: AzureCosmosNoSQL vector_store; delete based on `ref_doc_id` (#18120)
+
+### `llama-index-vector-stores-pinecone` [0.4.5]
+
+- bump compatible pinecone version (#18113)
+
+## [2025-03-13]
+
+### `llama-index-core` [0.12.24]
+
+- fix get content node metadata duplicated templates (#18110)
+- remove assert for multimodal llms in multimodal vector store/query engine (#18112)
+- fix: make run_step return all the events produced by a step (#18082)
+- fix(multimodal nodes): check image path is file before open (#18043)
+
+### `llama-index-embeddings-google-genai` [0.1.0]
+
+- Google genai embeddings (#18079)
+
+### `llama-index-graph-stores-neptune` [0.3.2]
+
+- Fix the TypeError in the upsert_triplet method of the Neptune (#18051)
+
+### `llama-index-indices-managed-vectara` [0.4.2]
+
+- Update Vectara Index to return both document level and page level metadata (#17976)
+
+### `llama-index-llms-contextual` [0.1.0]
+
+- Contextual Generate model (#17913)
+
+### `llama-index-llms-google-genai` [0.1.3]
+
+- Use GenAI package for google (#17939)
+- fix gemini roles (#18108)
+- fix null model meta references (#18109)
+- [BUG FIX] Google genai vertexai error (#18070)
+
+### `llama-index-memory-mem0` [0.3.0]
+
+- Mem0Memory Integration Issue: Update Required for Mem0 API Parameter Changes (#18066)
+
+### `llama-index-postprocessor-contextual-rerank` [0.1.0]
+
+- Contextual reranker (#18075)
+
+### `llama-index-readers-elasticsearch` [0.3.1]
+
+- Fix the redundancy of ElasticsearchReader (#18106)
+
+### `llama-index-readers-google` [0.6.1]
+
+- Use int type for redirect URI port (#18097)
+
 ## [2025-03-07]
 
 ### `llama-index-core` [0.12.23]
